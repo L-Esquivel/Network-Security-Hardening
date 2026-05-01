@@ -1,40 +1,44 @@
-# Linux Ops Monitoring Toolkit
+# Network Security Hardening Guide & Scripts
 
-**Suite of Bash Scripts for Automated Linux Infrastructure Monitoring and Log Management**
+**Practical documentation, checklists, and scripts for hardening network infrastructure and servers.**
 
-Collection of Bash scripts to monitor system health, track critical logs, and generate operational reports for Linux servers.
+Repository focused on reducing attack surface through proven security configurations, DNS hardening, firewall rules, and system optimization.
 
 ### 🎯 Objective
-Simplify daily Linux administration and security monitoring by automating repetitive tasks such as resource usage tracking, log analysis, and system health reporting.
+Provide actionable, real-world hardening guides and automation to help secure Linux servers and network devices following industry best practices (CIS, NIST inspired).
 
-### ✨ Key Features
-- Real-time CPU, memory, and disk usage monitoring
-- Automated log rotation and critical event detection
-- System health dashboard generation (HTML)
-- Failed login attempts and authentication monitoring
-- Disk space alerts and cleanup suggestions
-- Scheduled execution ready (cron)
+### ✨ Content Included
 
-### 🛠️ Technologies
-- Bash Scripting
-- Linux native tools (top, df, journalctl, awk, grep, etc.)
-- HTML + CSS for reports
-- Cron scheduling
+- **HARDENING_CHECKLIST.md** – Step-by-step checklist
+- **DNS_Hardening.md** – Secure DNS configuration
+- **Firewall_Examples/** – iptables / firewalld / ufw rules
+- **SSH_Hardening/** – Secure SSH setup
+- **Scripts/** – Automation scripts (use with caution)
+- **Before-After_Comparison.md** – Security improvements examples
+
+### 📋 Main Hardening Checklist (Summary)
+
+- Disable unnecessary services and ports
+- Implement strong SSH configuration (key-only, fail2ban)
+- DNS security (query restrictions, DNSSEC)
+- Firewall rules (default deny policy)
+- System updates and automatic security patching
+- User account and password policy enforcement
+- Logging and monitoring setup
 
 ### 🚀 How to Use
 
 ```bash
 # Clone the repository
-git clone https://github.com/L-Esquivel/Linux-Ops-Monitoring-Toolkit.git
-cd Linux-Ops-Monitoring-Toolkit
+git clone https://github.com/L-Esquivel/Network-Security-Hardening.git
+cd Network-Security-Hardening
 
-# Make scripts executable
-chmod +x *.sh
+# Explore the main checklist
+cat HARDENING_CHECKLIST.md
 
-# Run main monitoring script
-./monitor_system.sh
+# Review firewall examples
+ls Firewall_Examples/
 
-# Generate HTML report
-./generate_report.sh
+
 ---
 *This repository is part of a specialized portfolio in IT Operations and Cybersecurity, demonstrating the ability to build custom security tooling*.
