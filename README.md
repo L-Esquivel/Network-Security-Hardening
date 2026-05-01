@@ -1,16 +1,40 @@
-# Network & Security Hardening Lab 🔒
+# Linux Ops Monitoring Toolkit
 
-This repository contains technical documentation and configuration best practices for managing secure network infrastructures and IDC (Internet Data Center) operations.
+**Suite of Bash Scripts for Automated Linux Infrastructure Monitoring and Log Management**
 
-### 🌐 Network & DNS Management
-*   **DNS Configuration**: Implementation of secure DNS resolution and troubleshooting common connectivity issues.
-*   **Protocol Hardening**: Best practices for SSH, HTTPS, and firewall (iptables/ufw) configurations.
-*   **Port Monitoring**: Procedures for auditing open ports and services to reduce the attack surface.
+Collection of Bash scripts to monitor system health, track critical logs, and generate operational reports for Linux servers.
 
-### 🗄️ Storage & IDC Operations
-*   **Storage Monitoring**: Procedures for monitoring disk health and RAID status.
-*   **Resource Optimization**: Strategies for maintaining high availability (HA) in critical server environments.
+### 🎯 Objective
+Simplify daily Linux administration and security monitoring by automating repetitive tasks such as resource usage tracking, log analysis, and system health reporting.
 
-### 🛡️ Security Best Practices
-*   **User Access Control**: Implementing the principle of least privilege (PoLP) in Linux systems.
-*   **Audit Logs**: Configuration of system logs for forensic analysis and threat detection.
+### ✨ Key Features
+- Real-time CPU, memory, and disk usage monitoring
+- Automated log rotation and critical event detection
+- System health dashboard generation (HTML)
+- Failed login attempts and authentication monitoring
+- Disk space alerts and cleanup suggestions
+- Scheduled execution ready (cron)
+
+### 🛠️ Technologies
+- Bash Scripting
+- Linux native tools (top, df, journalctl, awk, grep, etc.)
+- HTML + CSS for reports
+- Cron scheduling
+
+### 🚀 How to Use
+
+```bash
+# Clone the repository
+git clone https://github.com/L-Esquivel/Linux-Ops-Monitoring-Toolkit.git
+cd Linux-Ops-Monitoring-Toolkit
+
+# Make scripts executable
+chmod +x *.sh
+
+# Run main monitoring script
+./monitor_system.sh
+
+# Generate HTML report
+./generate_report.sh
+---
+*This repository is part of a specialized portfolio in IT Operations and Cybersecurity, demonstrating the ability to build custom security tooling*.
