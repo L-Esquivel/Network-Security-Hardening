@@ -46,3 +46,8 @@ Practical checklist to reduce attack surface on Linux servers and network device
 - [ ] Set proper file permissions (umask 027)
 - [ ] Install security tools (ClamAV, rkhunter, lynis)
 - [ ] Regular vulnerability scanning
+
+---
+
+**Before / After Comparison** → See `Before-After_Comparison.md`
+**Scripts** → See `/Scripts` folder
