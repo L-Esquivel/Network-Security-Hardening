@@ -1,30 +1,25 @@
 # Network Security Hardening Guide & Scripts
 
-**Practical documentation, checklists, and scripts for hardening network infrastructure and servers.**
+**Practical documentation, checklists, and scripts for hardening Linux servers and network infrastructure.**
 
-Repository focused on reducing attack surface through proven security configurations, DNS hardening, firewall rules, and system optimization.
+Repository focused on reducing the attack surface through proven security configurations, DNS hardening, firewall rules, and system optimization.
 
 ### 🎯 Objective
-Provide actionable, real-world hardening guides and automation to help secure Linux servers and network devices following industry best practices (CIS, NIST inspired).
+Provide actionable, real-world hardening guides and automation scripts to help secure servers following industry best practices (CIS Benchmarks inspired).
 
-### ✨ Content Included
+### 📋 What's Included
+- **HARDENING_CHECKLIST.md** – Step-by-step hardening checklist
+- **DNS_Hardening.md** – Secure DNS configuration guide
+- **Before-After_Comparison.md** – Security improvement comparison
+- **Scripts/** – Ready-to-use automation scripts
 
-- **HARDENING_CHECKLIST.md** – Step-by-step checklist
-- **DNS_Hardening.md** – Secure DNS configuration
-- **Firewall_Examples/** – iptables / firewalld / ufw rules
-- **SSH_Hardening/** – Secure SSH setup
-- **Scripts/** – Automation scripts (use with caution)
-- **Before-After_Comparison.md** – Security improvements examples
-
-### 📋 Main Hardening Checklist (Summary)
-
-- Disable unnecessary services and ports
-- Implement strong SSH configuration (key-only, fail2ban)
-- DNS security (query restrictions, DNSSEC)
-- Firewall rules (default deny policy)
-- System updates and automatic security patching
-- User account and password policy enforcement
-- Logging and monitoring setup
+### ✨ Key Hardening Areas Covered
+- SSH security (key-only authentication, Fail2Ban)
+- Firewall configuration (default deny policy)
+- DNS security and recursion control
+- System updates and cleanup
+- User account and permission hardening
+- Logging and basic monitoring
 
 ### 🚀 How to Use
 
@@ -33,12 +28,15 @@ Provide actionable, real-world hardening guides and automation to help secure Li
 git clone https://github.com/L-Esquivel/Network-Security-Hardening.git
 cd Network-Security-Hardening
 
-# Explore the main checklist
+# Explore the checklist
 cat HARDENING_CHECKLIST.md
 
-# Review firewall examples
-ls Firewall_Examples/
+# Make scripts executable
+chmod +x Scripts/*.sh
 
+# Example: Run SSH hardening (test first!)
+cd Scripts
+./harden_ssh.sh
 
 ---
 *This repository is part of a specialized portfolio in IT Operations and Cybersecurity, demonstrating the ability to build custom security tooling*.
